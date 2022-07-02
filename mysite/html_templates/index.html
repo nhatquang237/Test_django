@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--This is an external file or AKA static file,
+same for CSS for styling file, any image, video,...
+all of these-except html file have to be save in "static" folder,
+html have its own folder AKA "templates" (normally)- but in current project setting,
+the name have been change to "html_templates"-->
+<html lang="en">
+<link rel="stylesheet" >
+<h1>Input your text below: </h1>
+<body>
+
+    <div class="row">
+      <div class="column">
+        <h1>Input your text below: </h1>
+        <form method="POST" action="counter" id="chatinput">
+            {% csrf_token %}
+            <textarea name="text" rows="25" cols="50"></textarea><br>
+            <input type="submit"/>
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
